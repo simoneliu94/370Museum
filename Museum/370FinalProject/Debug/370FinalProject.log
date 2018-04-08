@@ -1,1 +1,3 @@
-﻿  370FinalProject.vcxproj -> C:\Users\simon\source\repos\Museum\Debug\370FinalProject.exe
+﻿  370FinalProject.cpp
+c:\users\simon\source\repos\museum\370finalproject\370finalproject.cpp(486): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  370FinalProject.vcxproj -> C:\Users\simon\source\repos\Museum\Debug\370FinalProject.exe

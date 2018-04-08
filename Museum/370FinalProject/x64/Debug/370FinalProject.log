@@ -1,0 +1,26 @@
+﻿  stdafx.cpp
+  370FinalProject.cpp
+c:\users\simon\source\repos\museum\370finalproject\370finalproject.cpp(487): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  BasicShape.cpp
+  Generating Code...
+370FinalProject.obj : error LNK2019: unresolved external symbol auxDIBImageLoadA referenced in function "struct _AUX_RGBImageRec * __cdecl LoadBMP(char *)" (?LoadBMP@@YAPEAU_AUX_RGBImageRec@@PEAD@Z)
+370FinalProject.obj : error LNK2019: unresolved external symbol __imp_glutInitDisplayMode referenced in function main
+370FinalProject.obj : error LNK2019: unresolved external symbol __imp_glutInitWindowPosition referenced in function main
+370FinalProject.obj : error LNK2019: unresolved external symbol __imp_glutInitWindowSize referenced in function main
+370FinalProject.obj : error LNK2019: unresolved external symbol __imp_glutMainLoop referenced in function main
+370FinalProject.obj : error LNK2019: unresolved external symbol __imp___glutCreateWindowWithExit referenced in function glutCreateWindow_ATEXIT_HACK
+370FinalProject.obj : error LNK2019: unresolved external symbol __imp_glutPostRedisplay referenced in function "void __cdecl RenderScene(void)" (?RenderScene@@YAXXZ)
+370FinalProject.obj : error LNK2019: unresolved external symbol __imp_glutDisplayFunc referenced in function main
+370FinalProject.obj : error LNK2019: unresolved external symbol __imp_glutReshapeFunc referenced in function main
+370FinalProject.obj : error LNK2019: unresolved external symbol __imp_glutKeyboardFunc referenced in function main
+370FinalProject.obj : error LNK2019: unresolved external symbol __imp_glutSpecialFunc referenced in function main
+370FinalProject.obj : error LNK2019: unresolved external symbol __imp_glutKeyboardUpFunc referenced in function main
+370FinalProject.obj : error LNK2019: unresolved external symbol __imp_glutSpecialUpFunc referenced in function main
+370FinalProject.obj : error LNK2019: unresolved external symbol __imp_glutBitmapCharacter referenced in function "void __cdecl printv(char *,char const *)" (?printv@@YAXPEADPEBD@Z)
+370FinalProject.obj : error LNK2019: unresolved external symbol __imp_glutSolidCone referenced in function "void __cdecl RenderScene(void)" (?RenderScene@@YAXXZ)
+370FinalProject.obj : error LNK2019: unresolved external symbol __imp_glutSolidCube referenced in function "void __cdecl RenderScene(void)" (?RenderScene@@YAXXZ)
+370FinalProject.obj : error LNK2019: unresolved external symbol __imp_glutSolidTeapot referenced in function "void __cdecl RenderScene(void)" (?RenderScene@@YAXXZ)
+370FinalProject.obj : error LNK2001: unresolved external symbol __imp___glewWindowPos2i
+BasicShape.obj : error LNK2019: unresolved external symbol __imp_glutSolidSphere referenced in function "public: static unsigned int __cdecl BasicShape::MakeSphere(float const &)" (?MakeSphere@BasicShape@@SAIAEBM@Z)
+C:\Program Files (x86)\Windows Kits\10\lib\10.0.16299.0\um\x64\glut32.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Users\simon\source\repos\Museum\x64\Debug\370FinalProject.exe : fatal error LNK1120: 19 unresolved externals

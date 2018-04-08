@@ -256,9 +256,9 @@ GLuint BasicShape::MakeBox(const float length, const float width, const float he
   glBegin(GL_QUADS);
   glNormal3f(0.0f, 1.0f, 0.0f);
   glTexCoord2f(0.0f, 0.0f); glVertex3f(0, y, 0);
-  glTexCoord2f(20.0f, 0.0f); glVertex3f(x, y, 0);
-  glTexCoord2f(20.0f, 20.0f); glVertex3f(x, y, z);
-  glTexCoord2f(0.0f, 20.0f); glVertex3f(0, y, z);
+  glTexCoord2f(100.0f, 0.0f); glVertex3f(x, y, 0);
+  glTexCoord2f(100.0f, 100.0f); glVertex3f(x, y, z);
+  glTexCoord2f(0.0f, 100.0f); glVertex3f(0, y, z);
 
   //Bottom
   /*glBegin(GL_QUADS);
@@ -273,6 +273,44 @@ GLuint BasicShape::MakeBox(const float length, const float width, const float he
   glEndList();
 
   return dp_list;
+}
+
+GLuint BasicShape::MakeWall(const float& size)
+{
+	GLuint dp_list;
+	dp_list = glGenLists(1);
+	glNewList(dp_list, GL_COMPILE);
+
+	glBegin(GL_QUADS);        					//FRONT
+	glTexCoord2f(0.0f, 1.0f); glVertex3f(-size, size, size);
+	glTexCoord2f(1.0f, 1.0f); glVertex3f(size, size, size);
+	glTexCoord2f(1.0f, 0.0f); glVertex3f(size, 0, size);
+	glTexCoord2f(0.0f, 0.0f); glVertex3f(-size, 0, size);
+	glEnd();
+
+	glBegin(GL_QUADS);        					//BACK
+	glTexCoord2f(0.0f, 1.0f); glVertex3f(-size, size, -size);
+	glTexCoord2f(1.0f, 1.0f); glVertex3f(size, size, -size);
+	glTexCoord2f(1.0f, 0.0f); glVertex3f(size, 0, -size);
+	glTexCoord2f(0.0f, 0.0f); glVertex3f(-size, 0, -size);
+	glEnd();
+
+	glBegin(GL_QUADS);        					//RIGHT SIDE
+	glTexCoord2f(1.0f, 0.0f); glVertex3f(size, size, size);
+	glTexCoord2f(1.0f, 1.0f); glVertex3f(size, 0, size);
+	glTexCoord2f(0.0f, 1.0f); glVertex3f(size, 0, -size);
+	glTexCoord2f(0.0f, 0.0f); glVertex3f(size, size, -size);
+	glEnd();
+
+	glBegin(GL_QUADS);        					//LEFT SIDE
+	glTexCoord2f(1.0f, 0.0f); glVertex3f(-size, size, size);
+	glTexCoord2f(1.0f, 1.0f); glVertex3f(-size, 0, size);
+	glTexCoord2f(0.0f, 1.0f); glVertex3f(-size, 0, -size);
+	glTexCoord2f(0.0f, 0.0f); glVertex3f(-size, size, -size);
+	glEnd();
+
+	glEndList();
+	return dp_list;
 }
 
 GLuint BasicShape::MakeCube(const float& size)
@@ -324,3 +362,4 @@ GLuint BasicShape::MakeCube(const float& size)
 
   return dp_list;
 }
+
