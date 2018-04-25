@@ -1,4 +1,4 @@
 ﻿  370FinalProject.cpp
-c:\users\simon\source\repos\museum\370finalproject\370finalproject.cpp(485): warning C4326: return type of 'main' should be 'int' instead of 'void'
+c:\users\simon\source\repos\museum\370finalproject\370finalproject.cpp(486): warning C4326: return type of 'main' should be 'int' instead of 'void'
 370FinalProject.obj : error LNK2001: unresolved external symbol _auxDIBImageLoadA@4
 C:\Users\simon\source\repos\Museum\Release\370FinalProject.exe : fatal error LNK1120: 1 unresolved externals
